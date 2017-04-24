@@ -35,6 +35,9 @@ header nav #navigation .nav-element:hover {
   color: #de5810;
   transition: 0.2s;
 }
+header nav #navigationMobile {
+  float: right;
+}
 .welcomeSection {
   width: 100%;
   text-align: center;
@@ -58,7 +61,7 @@ header nav #navigation .nav-element:hover {
   margin-bottom: 15px;
   margin-top: 0;
   padding-top: 25px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .descriptionSection {
   width: 100%;
@@ -91,7 +94,6 @@ header nav #navigation .nav-element:hover {
   font-size: 37px;
   font-weight: 400;
   padding: 30px;
-  letter-spacing: 3px;
 }
 #registerButton {
   clear: both;
@@ -105,19 +107,53 @@ header nav #navigation .nav-element:hover {
   font-size: 21px;
   padding-left: 8px;
 }
-#registerButton .glyphicon-chevron-right {
+#registerButton .glyphicon-calendar {
   border-right: 0.5px solid white;
+  padding: 3px 14px 4px 10px;
+  top: 2px;
+}
+#registerButton .registerButtonText {
+  margin: 0 15px;
 }
 #registerButton:hover {
   background-color: white;
   color: #202020;
   transition: 0.2s;
 }
-#registerButton:hover .glyphicon-chevron-right {
+#registerButton:hover .glyphicon-calendar {
   border-right: 0.5px solid #202020;
+}
+#navigationMobile {
+  display: none;
+}
+#navigationMobile .glyphicon-menu-hamburger {
+  color: #373737;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 11px;
+  float: right;
+}
+#navigationMobile .dropdownMenu {
+  display: none;
+  margin: 0 50px;
+  background-color: gray;
+  width: 50vw;
+  margin: 20px;
+  height: 300px;
+}
+#navigationMobile:hover .dropdownMenu {
+  display: block;
 }
 @media all and (max-width: 480px) {
   .welcomeSection p {
     font-size: 28px;
+  }
+}
+@media all and (max-width: 868px) {
+  #navigationMobile {
+    display: inline;
+  }
+  #navigation {
+    display: none;
   }
 }

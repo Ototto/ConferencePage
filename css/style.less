@@ -45,6 +45,11 @@ header{
                 transition: 0.2s;
             }   
         }
+
+        #navigationMobile{
+
+            float:right;
+        }
     }
 }
 
@@ -74,7 +79,7 @@ header{
         margin-bottom: 15px;
         margin-top: 0;
         padding-top: 25px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 }
 
@@ -118,7 +123,6 @@ header{
     font-size: 37px;
     font-weight: 400;
     padding: 30px;
-    letter-spacing: 3px;
 }
 
 #registerButton{
@@ -133,8 +137,14 @@ header{
     font-size: 21px;
     padding-left: 8px;
 
-    .glyphicon-chevron-right{
+    .glyphicon-calendar{
         border-right: 0.5px solid white;
+        padding: 3px 14px 4px 10px;
+        top: 2px;
+    }
+
+    .registerButtonText{
+        margin: 0 15px;
     }
 }
 
@@ -143,8 +153,37 @@ header{
     color: #202020;
     transition: 0.2s;
 
-    .glyphicon-chevron-right{
+    .glyphicon-calendar{
         border-right: 0.5px solid #202020;
+    }
+}
+
+//Dropdown mobile
+#navigationMobile{
+    display: none;
+
+    .glyphicon-menu-hamburger{
+        color: #373737;
+        text-decoration: none;
+        font-size: 30px;
+        padding: 11px;
+        float:right;
+    }
+
+    .dropdownMenu{
+        display: none;
+        margin: 0 50px;
+        background-color: gray;
+        width: 50vw;
+        margin: 20px;
+        height: 300px;
+    }
+}
+
+#navigationMobile:hover{
+
+    .dropdownMenu{
+        display: block;
     }
 }
 
@@ -154,4 +193,14 @@ header{
         .welcomeSection p{
             font-size: 28px;
         }
+}
+
+@media all and(max-width: 868px){
+    #navigationMobile{
+        display: inline;
+    }
+
+    #navigation{
+        display: none;
+    }
 }
