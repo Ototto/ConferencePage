@@ -4,49 +4,82 @@ body {
   font-family: 'Coda', sans-serif;
   font-weight: 400;
 }
-header {
-  top: 0;
-  width: 100%;
-  height: 55px;
-  background-color: white;
-  display: inline-block;
-  position: fixed;
-  z-index: 999;
+.entry-page {
+  height: 700px;
+  background-image: url("../content/bg.png");
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center left;
 }
-header nav #logo {
+.site-logo {
   float: left;
-  margin-left: 10px;
-  padding: 5px;
+  color: #d800ff;
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left: 30px;
 }
-header nav #logo img {
-  width: 70px;
-  height: 45px;
+nav {
+  text-align: right;
 }
-header nav #navigation {
-  float: right;
-  padding: 17px;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  margin-right: 40px;
+  padding-top: 20px;
 }
-header nav #navigation .nav-element {
-  padding: 22px;
-  color: black;
-  text-decoration: none;
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #ffffff;
 }
-header nav #navigation .nav-element:hover {
-  color: #de5810;
-  transition: 0.2s;
+nav ul li:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
-header nav #navigationMobile {
-  float: right;
+#header {
+  margin: 0 auto;
+  margin-top: 200px;
+  text-align: center;
+}
+#header .title {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #d800ff;
+}
+#header .description {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+#header .cta-button {
+  width: 140px;
+  padding: 10px 5px;
+  margin: 5px auto 0 auto;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s all ease-in-out;
+}
+#header .cta-button:hover {
+  border-color: #d800ff;
+  color: #0203e3;
+  background-color: #d800ff;
 }
 .welcomeSection {
   width: 100%;
   text-align: center;
   height: calc(100vh - 55px);
-  background-image: url("/content/background.png");
+  background-image: url("../content/bg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-top: 55px;
+  color: #d800ff;
 }
 .welcomeSection img {
   margin: 0 auto;
@@ -107,7 +140,7 @@ header nav #navigationMobile {
   font-size: 21px;
   padding-left: 8px;
 }
-#registerButton .glyphicon-calendar {
+#registerButton .fa-calendar-check-o {
   border-right: 0.5px solid white;
   padding: 3px 14px 4px 10px;
   top: 2px;
@@ -120,29 +153,41 @@ header nav #navigationMobile {
   color: #202020;
   transition: 0.2s;
 }
-#registerButton:hover .glyphicon-calendar {
+#registerButton:hover .fa-calendar-check-o {
   border-right: 0.5px solid #202020;
 }
 #navigationMobile {
   display: none;
 }
 #navigationMobile .glyphicon-menu-hamburger {
+  float: right;
+  right: 15px;
   color: #373737;
   text-decoration: none;
   font-size: 30px;
   padding: 11px;
-  float: right;
 }
 #navigationMobile .dropdownMenu {
   display: none;
-  margin: 0 50px;
   background-color: gray;
-  width: 50vw;
-  margin: 20px;
+  width: 100vw;
   height: 300px;
+  list-style-type: none;
+  list-style: none;
+}
+#navigationMobile .drop-element {
+  color: white;
+  border-bottom: 0.3px solid white;
+  text-decoration: none;
+  width: 100%;
+  font-size: 30px;
+  padding: 0 40px;
+}
+#navigationMobile:hover {
+  margin-top: -50px;
 }
 #navigationMobile:hover .dropdownMenu {
-  display: block;
+  display: inline-block;
 }
 @media all and (max-width: 480px) {
   .welcomeSection p {
