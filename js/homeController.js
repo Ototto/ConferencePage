@@ -26,6 +26,9 @@ var HomeController = new function () {
     
     var init = new function () {
         navbarControl;
+        $(window).resize(function() {
+            $('.entry-page').height($(window).height() + 60)
+        });
     }
 
     return {
