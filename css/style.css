@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-position: 100% auto;
   position: relative;
+  transition: 999999s;
 }
 .navbarBar {
   z-index: 1000;
@@ -170,10 +171,5 @@ footer {
 @media all and (max-width: 480px) {
   .welcomeSection p {
     font-size: 28px;
-  }
-}
-@media all and (max-width 768) {
-  .entry-page {
-    height: calc(100vh + 60px);
   }
 }
