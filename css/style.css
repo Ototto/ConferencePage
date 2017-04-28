@@ -172,4 +172,7 @@ footer {
   .welcomeSection p {
     font-size: 28px;
   }
+  #header {
+    padding-top: 150px;
+  }
 }
