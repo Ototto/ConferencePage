@@ -52,6 +52,18 @@ body {
     }
 }
 
+.glyphicon-menu-hamburger{
+    float: right;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    display: none !important;
+}
+
+.glyphicon-menu-hamburger:hover{
+    cursor: pointer;
+}
+
 #header {
     margin: 0 auto;
     padding-top: 260px;
@@ -140,10 +152,49 @@ body {
 }
 
 footer {
-    height: 400px;
+    height: 500px;
     width: 100%;
     background-color: #272727;
     color: white;
+    
+    
+
+    .contactContainer{
+        text-align: center;
+
+        .contactSection{
+            padding: 0 0 40px 17px;
+            
+        }
+
+        .dotnet{
+            background-image: url("../content/facebookGray.png");
+            background-position: center;
+            background-size: 76px 76px;
+            width: 76px;
+            height: 76px;
+            background-color: #595959;
+            border-radius: 45px;
+            margin: 0 auto;
+        }
+
+        .facebooks{
+            display: block;
+            float: left;
+            text-align: left;
+        }
+
+        .dotnetTitle{
+            font-size: 28px;
+        }
+
+        .dotnet:hover{
+            background-color: #3b5998;
+            transition: 0.5s;
+            background-position-x: 76px;
+            background-image: url('../content/facebookWhite.png');
+        }
+    }
 }
 
 // Global
@@ -245,6 +296,21 @@ footer {
     }
 }
 
+// Animations
+
+@keyframes navbarJump{
+
+}
+
+@keyframes animateFacebook{
+    from{
+        
+    }
+    to{
+
+    }
+}
+
 // Media queries
 @media all and (max-width: 480px) {
     .welcomeSection p {
@@ -262,19 +328,48 @@ footer {
         }
 
     }
+    #header .title{
+        font-size: 38px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-    .site-logo {
-        float: none;
+
+    .contactSection{
+        display: inline-block;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding: 15px;
+        margin: 0 auto;
     }
+
+    footer{
+        .contactContainer{
+            .contactSection{
+                padding-left: 0;
+                padding: 10px;
+            }
+            .facebooks{
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+
     .navbarNavigation {
         float: left;
+        display: none;
         ul {
             li {
                 display: block;
             }
-            li:hover {}
         }
+    }
+
+    .glyphicon-menu-hamburger{
+        display: block !important;
     }
 }
