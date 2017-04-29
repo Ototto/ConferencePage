@@ -293,6 +293,7 @@ footer .contactContainer .dotnet:hover {
   .navbarNavigation {
     float: left;
     display: none;
+    background-color: rgba(26, 26, 255, 0.9);
   }
   .navbarNavigation ul li {
     display: block;
