@@ -26,23 +26,23 @@ body {
   margin-top: 20px;
   margin-left: 30px;
 }
-nav {
-  text-align: right;
+.navbarNavigation {
+  float: right;
 }
-nav ul {
+.navbarNavigation ul {
   list-style-type: none;
   margin: 0;
   margin-right: 40px;
   padding-top: 20px;
 }
-nav ul li {
+.navbarNavigation ul li {
   display: inline-block;
   text-transform: uppercase;
   padding: 10px 20px;
   font-weight: 600;
   color: #ffffff;
 }
-nav ul li:hover {
+.navbarNavigation ul li:hover {
   opacity: 0.7;
   cursor: pointer;
 }
@@ -101,6 +101,8 @@ nav ul li:hover {
   width: 100%;
   border-bottom: 1px solid black;
   padding-bottom: 20px;
+  display: inline-block;
+  text-align: center;
 }
 .partnerSection {
   width: 100%;
@@ -168,11 +170,73 @@ footer {
 #registerButton:hover .glyphicon-check {
   border-right: 0.5px solid #202020;
 }
+.prelegentContainer {
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #fff 50%, #0203e3 50%, #d800ff);
+  transition: background-position 0.5s;
+  background-size: 100% 200%;
+  padding-top: 33px;
+  border-radius: 10px 60px;
+  margin-top: 10px;
+}
+.prelegentContainer .prelegentPhoto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  box-shadow: 0 0 20px #888888;
+  -webkit-box-shadow: 0 0 20px #888888;
+  -moz-box-shadow: 0 0 20px #888888;
+}
+.prelegentContainer .prelegentName {
+  font-size: 17px;
+}
+.prelegentContainer:hover {
+  color: #fff;
+  transition: 0.5s;
+  background-position: 0 -100%;
+  cursor: pointer;
+}
+.prelegentModal {
+  position: absolute;
+  top: 50%;
+}
+.modalContent {
+  padding: 3px;
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+}
+.modalContent .modalText {
+  display: inline-block;
+  padding: 7px;
+}
 @media all and (max-width: 480px) {
   .welcomeSection p {
     font-size: 28px;
   }
   #header {
     padding-top: 150px;
+  }
+  .modalContent {
+    display: block;
+  }
+  .modalContent img {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .site-logo {
+    float: none;
+  }
+  .navbarNavigation {
+    float: left;
+  }
+  .navbarNavigation ul li {
+    display: block;
   }
 }

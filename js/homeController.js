@@ -9,7 +9,7 @@ var HomeController = new function () {
                     'transition' : '0.3s',       
                 });
 
-                $('.navbarNavigation').css({
+                $('.navbarNavigationList').css({
                      'padding' : '8px'
                 });
 
@@ -18,7 +18,7 @@ var HomeController = new function () {
                 });
 
             } else {
-                $('.navbarBar, .navbarNavigation, .site-logo').attr('style', '');
+                $('.navbarBar, .navbarNavigationList, .site-logo').attr('style', '');
             }
         });
     }
@@ -26,11 +26,10 @@ var HomeController = new function () {
     
     var init = new function () {
         navbarControl;
-        $(window).resize(function() {
-        });
+        
     }
 
     return {
         init: init
     }
-}
+}()

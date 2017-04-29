@@ -6,20 +6,23 @@
     <title>Zakręć się z technologią!</title>
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <div class="navbarBar">
-        <div class="site-logo"><a href="#"><img src="../content/net-logo.png" width="40" height="40" alt="Grupa .NET PG"></a></div>
+        <div class="site-logo">
+            <a href="#"><img src="../content/net-logo.png" width="40" height="40" alt="Grupa .NET PG"></a>
+        </div>
         <div class="hamburger"></div>
-        <nav>
-            <ul class="navbarNavigation">
+        <nav class="navbarNavigation">
+            <ul class="navbarNavigationList">
                 <li>home</li>
                 <li>o konferencji</li>
                 <li>rejestracja</li>
@@ -40,7 +43,13 @@
                 O KONFERENCJI
             </div>
             <p class="sectionContent">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nisl quis quam pulvinar vestibulum. Proin placerat leo finibus velit faucibus hendrerit. Praesent commodo tortor quis odio bibendum, non egestas erat mattis. Cras maximus sem augue, eget tincidunt est imperdiet vel. In vestibulum aliquam dapibus. Aliquam malesuada risus at augue pharetra venenatis. Aenean lacinia viverra est, id vehicula sapien eleifend quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut eleifend at diam non posuere. Fusce cursus leo nec nunc fermentum, eget fermentum dolor auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sed augue magna.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nisl quis quam pulvinar vestibulum. Proin placerat leo
+                finibus velit faucibus hendrerit. Praesent commodo tortor quis odio bibendum, non egestas erat mattis. Cras
+                maximus sem augue, eget tincidunt est imperdiet vel. In vestibulum aliquam dapibus. Aliquam malesuada risus
+                at augue pharetra venenatis. Aenean lacinia viverra est, id vehicula sapien eleifend quis. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut eleifend at diam non posuere. Fusce
+                cursus leo nec nunc fermentum, eget fermentum dolor auctor. Pellentesque habitant morbi tristique senectus
+                et netus et malesuada fames ac turpis egestas. Praesent sed augue magna.
             </p>
         </section>
         <section class="registerSection" id="register">
@@ -73,9 +82,47 @@
             <div class="sectionTitle">
                 PRELEGENCI
             </div>
-            <p class="sectionContent">
-                Już wkrótce
-            </p>
+            <div class="prelegentContainer" data-toggle="modal" data-target=".prelegentModal">
+                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
+                <div class="prelegentName">Ray Tsang</div>
+                <div class="prelegentShort">Google</div>
+            </div>
+            <div class="prelegentContainer">
+                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
+                <div class="prelegentName">Ray Tsang</div>
+                <div class="prelegentShort">Google</div>
+            </div>
+            <div class="prelegentContainer">
+                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
+                <div class="prelegentName">Ray Tsang</div>
+                <div class="prelegentShort">Google</div>
+            </div>
+            <div class="prelegentContainer">
+                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
+                <div class="prelegentName">Ray Tsang</div>
+                <div class="prelegentShort">Google</div>
+            </div>
+            <div class="prelegentContainer">
+                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
+                <div class="prelegentName">Ray Tsang</div>
+                <div class="prelegentShort">Google</div>
+            </div>
+            <div class="prelegentContainer">
+                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
+                <div class="prelegentName">Ray Tsang</div>
+                <div class="prelegentShort">Google</div>
+            </div>
+            <div class="prelegentContainer">
+                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
+                <div class="prelegentName">Ray Tsang</div>
+                <div class="prelegentShort">Google</div>
+            </div>
+            <div class="prelegentContainer">
+                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
+                <div class="prelegentName">Ray Tsang</div>
+                <div class="prelegentShort">Google</div>
+            </div>
+            
         </section>
         <section class="partnerSection" id="partner">
             <div class="sectionTitle">
@@ -89,32 +136,49 @@
             <div class="sectionTitle">
                 ADRES
             </div>
-                <div id="googleMap"></div>
-                <div class="adress">
-                    Politechnika Gdańska<br> G.Narutowicza 11/12<br> Gdańsk
-                </div>
+            <div id="googleMap"></div>
+            <div class="adress">
+                Politechnika Gdańska<br> G.Narutowicza 11/12<br> Gdańsk
+            </div>
         </section>
     </main>
     <footer>
         <div class="sectionTitle">Kontakt</div>
-    </footer>
+    </footer>   
+
+    <div class="modal fade prelegentModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modalContent">
+            <img class="img-responsive" src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt="">           
+            <div class="modalText">
+                <h2>Ray Tsang</h2>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nisl quis quam pulvinar vestibulum. Proin placerat leo
+                finibus velit faucibus hendrerit. Praesent commodo tortor quis odio bibendum, non egestas erat mattis.
+            </div>
+        </div>
+        
+    </div>
+</div>
+
     <script src="/js/homeController.js">
         HomeController.init;
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHtd7iHb0nZeRjIBCF2J9U_HI3ja--qDo&callback=initMap"> </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHtd7iHb0nZeRjIBCF2J9U_HI3ja--qDo&callback=initMap">
+
+    </script>
     <script>
-        var initMap = new function(){
-        var pg = {lat: 54.371640, lng: 18.612628};
-        var map = new google.maps.Map(document.getElementById('googleMap'), {
-          zoom: 18,
-          center: pg
-        });
-        var marker = new google.maps.Marker({
-          position: pg,
-          map: map
-        });
-      }
-    </script>   
+        var initMap = new function () {
+            var pg = { lat: 54.371640, lng: 18.612628 };
+            var map = new google.maps.Map(document.getElementById('googleMap'), {
+                zoom: 18,
+                center: pg
+            });
+            var marker = new google.maps.Marker({
+                position: pg,
+                map: map
+            });
+        }
+    </script>
 </body>
 
 </html>
