@@ -25,23 +25,23 @@
 
     <div class="navbarBar">
         <div class="site-logo">
-            <a href="#"><img src="../content/net-logo.png" width="40" height="40" alt="Grupa .NET PG"></a>
+            <a href="https://www.facebook.com/GrupaNETPg/?fref=ts"><img src="../content/net-logo.png" width="40" height="40" alt="Grupa .NET PG"></a>
         </div>
         <div id="menuBtn" class="glyphicon glyphicon-menu-hamburger"></div>
         <nav class="navbarNavigation">
             <ul class="navbarNavigationList">
-                <li class="navigationLink">home</li>
-                <li class="navigationLink">o konferencji</li>
-                <li class="navigationLink">rejestracja</li>
-                <li class="navigationLink">agenda</li>
-                <li class="navigationLink">warsztaty</li>
-                <li class="navigationLink">prelegenci</li>
-                <li class="navigationLink">partnerzy</li>
-                <li class="navigationLink">kontakt</li>
+                <a href="#mainPage"><li class="navigationLink" id="mainPageButton">home</li></a>
+                <a href="#description"><li class="navigationLink">o konferencji</li></a>
+                <a href="#register"><li class="navigationLink">rejestracja</li></a>
+                <a href="#agenda"><li class="navigationLink">agenda</li></a>
+                <a href="#workshop"><li class="navigationLink">warsztaty</li></a>
+                <a href="#prelegent"><li class="navigationLink">prelegenci</li></a>
+                <a href="#partner"><li class="navigationLink">partnerzy</li></a>
+                <a href="#adress"><li class="navigationLink">kontakt</li></a>
             </ul>
         </nav>
     </div>
-    <div class="entry-page">
+    <div class="entry-page" id="mainPage">
         <div id="header" class="slideInDown">
             <div class="title">zakręć się z technologią</div>
             <div class="description">unikalna konferencja w TRÓJMIEŚCIE</div>
@@ -93,47 +93,13 @@
             <div class="sectionTitle">
                 PRELEGENCI
             </div>
-            <div class="prelegentContainer" data-toggle="modal" data-target=".prelegentModal">
+            <div class="sectionContent">Już wkrótce</div>
+            <!--<div class="prelegentContainer" data-toggle="modal" data-target=".prelegentModal" data-desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nisl quis quam pulvinar vestibulum. Proin placerat leo
+                    finibus velit faucibus hendrerit. Praesent commodo tortor quis odio bibendum, non egestas erat mattis." data-name="Ray Tsang" >
                 <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
                 <div class="prelegentName">Ray Tsang</div>
                 <div class="prelegentShort">Google</div>
-            </div>
-            <div class="prelegentContainer">
-                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
-                <div class="prelegentName">Ray Tsang</div>
-                <div class="prelegentShort">Google</div>
-            </div>
-            <div class="prelegentContainer">
-                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
-                <div class="prelegentName">Ray Tsang</div>
-                <div class="prelegentShort">Google</div>
-            </div>
-            <div class="prelegentContainer">
-                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
-                <div class="prelegentName">Ray Tsang</div>
-                <div class="prelegentShort">Google</div>
-            </div>
-            <div class="prelegentContainer">
-                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
-                <div class="prelegentName">Ray Tsang</div>
-                <div class="prelegentShort">Google</div>
-            </div>
-            <div class="prelegentContainer">
-                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
-                <div class="prelegentName">Ray Tsang</div>
-                <div class="prelegentShort">Google</div>
-            </div>
-            <div class="prelegentContainer">
-                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
-                <div class="prelegentName">Ray Tsang</div>
-                <div class="prelegentShort">Google</div>
-            </div>
-            <div class="prelegentContainer">
-                <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
-                <div class="prelegentName">Ray Tsang</div>
-                <div class="prelegentShort">Google</div>
-            </div>
-
+            </div>-->
         </section>
         <section class="partnerSection" id="partner">
             <div class="sectionTitle">
@@ -159,13 +125,13 @@
             <div class="facebooks">
                 <div class="contactSection">
                     <div class="dotnetTitle">Grupa .NET PG</div>
-                    <a href="#">
+                    <a href="https://www.facebook.com/GrupaNETPg/?fref=ts">
                         <div class="dotnet"></div>
                     </a>
                 </div>
                 <div class="contactSection">
                     <div class="dotnetTitle">Grupa Junior .NET PG</div>
-                    <a href="#">
+                    <a href="https://www.facebook.com/junior.NET.PG/?fref=ts">
                         <div class="dotnet"></div>
                     </a>
                 </div>
@@ -182,9 +148,9 @@
             <div class="modalContent">
                 <img class="img-responsive" src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt="">
                 <div class="modalText">
-                    <h2>Ray Tsang</h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nisl quis quam pulvinar vestibulum. Proin placerat leo
-                    finibus velit faucibus hendrerit. Praesent commodo tortor quis odio bibendum, non egestas erat mattis.
+                    <h2 id="modalName"></h2>
+                    <div id="modalDesc">
+                    </div>
                 </div>
             </div>
 
