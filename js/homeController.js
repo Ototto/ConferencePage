@@ -20,7 +20,7 @@ var HomeController = new function () {
             } else {
                 $('.navbarBar, .navbarNavigationList, .site-logo').attr('style', '');
             }
-        });
+        }); 
     }
 
     var closeMobileNavbar = function(){

@@ -152,12 +152,11 @@ body {
 }
 
 footer {
-    height: 500px;
+    min-height: 430px;
+    max-height: 500px;
     width: 100%;
     background-color: #272727;
     color: white;
-    
-    
 
     .contactContainer{
         text-align: center;
@@ -175,7 +174,7 @@ footer {
             height: 76px;
             background-color: #595959;
             border-radius: 45px;
-            margin: 0 auto;
+            margin-left: 10px;
         }
 
         .facebooks{
@@ -353,16 +352,25 @@ footer {
                 text-align: center;
                 width: 100%;
             }
+            .dotnet{
+                margin: 0 auto;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 1160px) {
 
+    .navbarBar{
+        background-color: rgba(26, 26, 255, 0.9);
+        
+    }
+
     .navbarNavigation {
         float: left;
         display: none;
         background-color: rgba(26, 26, 255, 0.9);
+        width: 100vw;
         ul {
             li {
                 display: block;
