@@ -41,7 +41,7 @@ var HomeController = new function () {
             closeMobileNavbar();
         }
     }
-
+    
     var init = new function () {
         navbarControl;
         $('#menuBtn').click(mobileNavbarControl);

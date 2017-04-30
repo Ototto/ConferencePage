@@ -306,6 +306,9 @@ footer .contactContainer .dotnet:hover {
   .navbarNavigation ul li {
     display: block;
   }
+  .site-logo {
+    margin-top: 10px;
+  }
   .glyphicon-menu-hamburger {
     display: block !important;
   }
