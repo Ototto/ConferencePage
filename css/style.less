@@ -8,13 +8,14 @@ body {
 // Main page
 .entry-page {
     height: 100vh;
-    background-image: url("../content/bg.png");
+    background-image: url("../content/bgg.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 100% auto;
     position: relative;
     transition: 999999s;
+    background-color: #aa0000;
 }
 
 .navbarBar {
@@ -29,6 +30,8 @@ body {
     float: left;
     margin-top: 20px;
     margin-left: 30px;
+    border: 1px solid white;
+    
 }
 
 .navbarNavigation {
@@ -52,7 +55,7 @@ body {
     }
 }
 
-.glyphicon-menu-hamburger{
+.glyphicon-menu-hamburger {
     float: right;
     color: white;
     font-size: 24px;
@@ -60,7 +63,7 @@ body {
     display: none !important;
 }
 
-.glyphicon-menu-hamburger:hover{
+.glyphicon-menu-hamburger:hover {
     cursor: pointer;
 }
 
@@ -72,7 +75,7 @@ body {
         font-size: 48px;
         text-transform: uppercase;
         font-weight: 700;
-        color: #d800ff;
+        color: aliceblue;
     }
     .description {
         font-size: 18px;
@@ -90,9 +93,9 @@ body {
         transition: 0.2s all ease-in-out;
     }
     .cta-button:hover {
-        border-color: #d800ff;
-        color: #0203e3;
-        background-color: #d800ff;
+        border-color: aliceblue;
+        color: white;
+        background-color: #aa0000;
         cursor: pointer;
     }
 }
@@ -157,16 +160,12 @@ footer {
     width: 100%;
     background-color: #272727;
     color: white;
-
-    .contactContainer{
+    .contactContainer {
         text-align: center;
-
-        .contactSection{
+        .contactSection {
             padding: 0 0 40px 17px;
-            
         }
-
-        .dotnet{
+        .dotnet {
             background-image: url("../content/facebookGray.png");
             background-position: center;
             background-size: 76px 76px;
@@ -176,18 +175,15 @@ footer {
             border-radius: 45px;
             margin-left: 10px;
         }
-
-        .facebooks{
+        .facebooks {
             display: block;
             float: left;
             text-align: left;
         }
-
-        .dotnetTitle{
+        .dotnetTitle {
             font-size: 28px;
         }
-
-        .dotnet:hover{
+        .dotnet:hover {
             background-color: #3b5998;
             transition: 0.5s;
             background-position-x: 76px;
@@ -276,38 +272,28 @@ footer {
 }
 
 //Modals
-
-.prelegentModal{
+.prelegentModal {
     position: absolute;
     top: 50%;
-    
 }
 
-.modalContent{
+.modalContent {
     padding: 3px;
-    display: flex; 
+    display: flex;
     background-color: white;
     border-radius: 5px;
-    
-    .modalText{
+    .modalText {
         display: inline-block;
         padding: 7px;
     }
 }
 
 // Animations
+@keyframes navbarJump {}
 
-@keyframes navbarJump{
-
-}
-
-@keyframes animateFacebook{
-    from{
-        
-    }
-    to{
-
-    }
+@keyframes animateFacebook {
+    from {}
+    to {}
 }
 
 // Media queries
@@ -318,41 +304,36 @@ footer {
     #header {
         padding-top: 150px;
     }
-
-    .modalContent{
+    .modalContent {
         display: block;
-
-        img{
+        img {
             margin: 0 auto;
         }
-
     }
-    #header .title{
+    #header .title {
         font-size: 38px;
     }
 }
 
 @media only screen and (max-width: 700px) {
-
-    .contactSection{
+    .contactSection {
         display: inline-block;
         padding-left: 100px;
         padding-right: 100px;
         padding: 15px;
         margin: 0 auto;
     }
-
-    footer{
-        .contactContainer{
-            .contactSection{
+    footer {
+        .contactContainer {
+            .contactSection {
                 padding-left: 0;
                 padding: 10px;
             }
-            .facebooks{
+            .facebooks {
                 text-align: center;
                 width: 100%;
             }
-            .dotnet{
+            .dotnet {
                 margin: 0 auto;
             }
         }
@@ -360,16 +341,13 @@ footer {
 }
 
 @media only screen and (max-width: 1160px) {
-
-    .navbarBar{
-        background-color: rgba(26, 26, 255, 0.9);
-        
+    .navbarBar {
+        background-color: rgba(170, 0, 0, 0.9);
     }
-
     .navbarNavigation {
         float: left;
         display: none;
-        background-color: rgba(26, 26, 255, 0.9);
+        background-color: rgba(170, 0, 0, 0.1);
         width: 100vw;
         ul {
             li {
@@ -377,12 +355,10 @@ footer {
             }
         }
     }
-
     .site-logo {
-        margin-top: 10px;
+        margin-top: 6px;
     }
-
-    .glyphicon-menu-hamburger{
+    .glyphicon-menu-hamburger {
         display: block !important;
     }
 }
