@@ -5,7 +5,7 @@ var HomeController = new function () {
             var screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 60;
             if ($(window).scrollTop() >= screenHeight) {
                 $('.navbarBar').css({
-                    'background-color': 'rgba(26, 26, 255, 0.9)',
+                    'background-color': 'rgba(170, 0, 0, 0.9)',
                     'transition': '0.3s',
                 });
 
