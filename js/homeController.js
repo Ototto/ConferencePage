@@ -14,7 +14,7 @@ var HomeController = new function () {
                 });
 
                 $('.site-logo').css({
-                    'margin-top': '8px'
+                    'margin-top': '5px'
                 });
 
             } else {

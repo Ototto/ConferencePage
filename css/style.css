@@ -48,14 +48,17 @@ body {
   opacity: 0.7;
   cursor: pointer;
 }
-.glyphicon-menu-hamburger {
+.iconHamburger {
   float: right;
-  color: white;
-  font-size: 24px;
-  padding: 15px;
+  padding: 17px;
   display: none !important;
+  background-image: url('../content/hamburger.png');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin: 7px 7px 0px 0px;
 }
-.glyphicon-menu-hamburger:hover {
+.iconHamburger:hover {
   cursor: pointer;
 }
 #header {
@@ -195,23 +198,33 @@ footer .contactContainer .dotnet:hover {
   border-radius: 4px;
   padding: 7px;
   font-size: 21px;
-  padding-left: 8px;
+  padding-left: 27px;
+  position: relative;
 }
-#registerButton .glyphicon-check {
-  border-right: 0.5px solid white;
-  padding: 3px 14px 4px 10px;
-  top: 2px;
+#registerButton .iconCheck {
+  background-image: url('../content/Calendarwhite.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 #registerButton .registerButtonText {
-  margin: 0 15px;
+  margin: 0 14px;
+  border-left: 1px solid white;
+  padding-left: 3px;
 }
 #registerButton:hover {
   background-color: white;
   color: #202020;
   transition: 0.2s;
 }
-#registerButton:hover .glyphicon-check {
-  border-right: 0.5px solid #202020;
+#registerButton:hover .iconCheck {
+  background-image: url('../content/Calendarblack.png');
+}
+#registerButton:hover .registerButtonText {
+  border-left: 1px solid #202020;
 }
 .prelegentContainer {
   display: inline-block;
@@ -309,9 +322,10 @@ footer .contactContainer .dotnet:hover {
     display: block;
   }
   .site-logo {
-    margin-top: 6px;
+    margin-top: 5px;
+    margin-bottom: 3px;
   }
-  .glyphicon-menu-hamburger {
+  .iconHamburger {
     display: block !important;
   }
 }
