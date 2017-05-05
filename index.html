@@ -23,9 +23,9 @@
 <body>
     <div class="navbarBar">
         <div class="site-logo">
-            <a href="https://www.facebook.com/GrupaNETPg/?fref=ts"><img src="../content/net-logo.png" width="40" height="40" alt="Grupa .NET PG"></a>
+            <a href="https://www.facebook.com/GrupaNETPg/?fref=ts"><img src="./content/net-logo.png" width="40" height="40" alt="Grupa .NET PG"></a>
         </div>
-        <div id="menuBtn" class="iconHamburger"></div>
+        <div id="menuBtn" class="glyphicon glyphicon-menu-hamburger"></div>
         <nav class="navbarNavigation">
             <ul class="navbarNavigationList">
                 <a href="#mainPage"><li class="navigationLink" id="mainPageButton">home</li></a>
@@ -66,7 +66,7 @@
                 ZAREJESTRUJ SIĘ JUŻ TERAZ!
                 <br>
                 <a href="#" id="registerButton">
-                    <span class="iconCheck" aria-hidden="true"></span>
+                    <span class="iconCheck glyphicon glyphicon-calendar" aria-hidden="true"></span>
                     <span class="registerButtonText">Rejestracja</span>
                 </a>
             </div>
@@ -92,12 +92,12 @@
                 PRELEGENCI
             </div>
             <div class="sectionContent">Już wkrótce</div>
-            <div class="prelegentContainer" data-toggle="modal" data-target=".prelegentModal" data-desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nisl quis quam pulvinar vestibulum. Proin placerat leo
+            <!--<div class="prelegentContainer" data-toggle="modal" data-target=".prelegentModal" data-desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nisl quis quam pulvinar vestibulum. Proin placerat leo
                     finibus velit faucibus hendrerit. Praesent commodo tortor quis odio bibendum, non egestas erat mattis." data-name="Ray Tsang" >
                 <div class="prelegentPhoto"><img src="https://infoshare.pl/system/cache/img/f74fbd885e937b3a375bf8a897421d15.jpeg" alt=""></div>
                 <div class="prelegentName">Ray Tsang</div>
                 <div class="prelegentShort">Google</div>
-            </div>
+            </div>-->
         </section>
         <section class="partnerSection" id="partner">
             <div class="sectionTitle">
@@ -151,11 +151,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <script src="/js/homeController.js">
+    <script src="./js/homeController.js">
         HomeController.init;
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHtd7iHb0nZeRjIBCF2J9U_HI3ja--qDo&callback=initMap">
@@ -169,7 +168,6 @@
                 center: pg,
                 backgroundColor: "gray",
                 scrollwheel: false,
-
             });
             var marker = new google.maps.Marker({
                 position: pg,

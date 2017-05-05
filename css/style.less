@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
 body {
     margin: 0;
     background-color: aliceblue;
@@ -8,7 +14,7 @@ body {
 // Main page
 .entry-page {
     height: 100vh;
-    background-image: url("../content/bgg.jpeg");
+    background-image: url("../content/bgg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -55,19 +61,7 @@ body {
     }
 }
 
-.iconHamburger {
-    float: right;
-    padding: 17px;
-    display: none !important;
-    background-image: url('../content/hamburger.png');
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    margin: 7px 7px 0px 0px;
-
-}
-
-.iconHamburger:hover {
+#menuBtn:hover{
     cursor: pointer;
 }
 
@@ -211,6 +205,13 @@ footer {
     padding: 30px;
 }
 
+.glyphicon-menu-hamburger{
+    padding: 10px;
+    float:right;
+    font-size: 30px;
+    color: white;
+}
+
 #registerButton {
     clear: both;
     text-transform: uppercase;
@@ -223,13 +224,10 @@ footer {
     font-size: 21px;
     padding-left: 27px;
     position: relative;
-    .iconCheck {
-        background-image: url('../content/Calendarwhite.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding: 15px;
+    .glyphicon-calendar {
+        padding: 5px;
         position: absolute;
-        top: 5px;
+        top: 4px;
         left: 5px;
     }
     .registerButtonText {
@@ -373,8 +371,5 @@ footer {
     .site-logo {
         margin-top: 5px;
         margin-bottom: 3px;
-    }
-    .iconHamburger {
-        display: block !important;
     }
 }
