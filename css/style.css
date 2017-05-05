@@ -188,6 +188,7 @@ footer .contactContainer .dotnet:hover {
   float: right;
   font-size: 30px;
   color: white;
+  display: none;
 }
 #registerButton {
   clear: both;
