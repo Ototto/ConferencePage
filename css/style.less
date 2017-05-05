@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
 body {
     margin: 0;
     background-color: aliceblue;
@@ -8,6 +14,12 @@ body {
 // Main page
 .entry-page {
     height: 100vh;
+<<<<<<< HEAD
+=======
+    background-image: url("../content/bgg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+>>>>>>> 34a925d21b61eb87dc64f55af242cf2e4548cb83
     background-size: cover;
     position: relative;
     transition: 999999s;
@@ -51,19 +63,7 @@ body {
     }
 }
 
-.iconHamburger {
-    float: right;
-    padding: 17px;
-    display: none !important;
-    background-image: url('../content/hamburger.png');
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    margin: 7px 7px 0px 0px;
-
-}
-
-.iconHamburger:hover {
+#menuBtn:hover{
     cursor: pointer;
 }
 
@@ -200,11 +200,26 @@ footer {
     font-size: 18px;
 }
 
+#aboutInfo{
+    text-align: left;
+}
+
 .sectionTitle {
     text-align: center;
     font-size: 37px;
     font-weight: 400;
     padding: 30px;
+}
+
+.glyphicon-menu-hamburger{
+    padding: 10px;
+    float:right;
+    font-size: 30px;
+    color: white;
+}
+
+#menuBtn{
+    display: none;
 }
 
 #registerButton {
@@ -219,13 +234,10 @@ footer {
     font-size: 21px;
     padding-left: 27px;
     position: relative;
-    .iconCheck {
-        background-image: url('../content/Calendarwhite.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding: 15px;
+    .glyphicon-calendar {
+        padding: 5px;
         position: absolute;
-        top: 5px;
+        top: 4px;
         left: 5px;
     }
     .registerButtonText {
@@ -366,11 +378,12 @@ footer {
             }
         }
     }
+#menuBtn{
+    display: block;
+}
+
     .site-logo {
         margin-top: 5px;
         margin-bottom: 3px;
-    }
-    .iconHamburger {
-        display: block !important;
     }
 }

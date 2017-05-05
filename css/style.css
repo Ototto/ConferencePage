@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
 body {
   margin: 0;
   background-color: aliceblue;
@@ -6,7 +11,7 @@ body {
 }
 .entry-page {
   height: 100vh;
-  background-image: url("../content/bgg.jpeg");
+  background-image: url("../content/bgg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -48,17 +53,7 @@ body {
   opacity: 0.7;
   cursor: pointer;
 }
-.iconHamburger {
-  float: right;
-  padding: 17px;
-  display: none !important;
-  background-image: url('../content/hamburger.png');
-  width: 30px;
-  height: 30px;
-  background-size: cover;
-  margin: 7px 7px 0px 0px;
-}
-.iconHamburger:hover {
+#menuBtn:hover {
   cursor: pointer;
 }
 #header {
@@ -182,11 +177,23 @@ footer .contactContainer .dotnet:hover {
   margin: 0 auto;
   font-size: 18px;
 }
+#aboutInfo {
+  text-align: left;
+}
 .sectionTitle {
   text-align: center;
   font-size: 37px;
   font-weight: 400;
   padding: 30px;
+}
+.glyphicon-menu-hamburger {
+  padding: 10px;
+  float: right;
+  font-size: 30px;
+  color: white;
+}
+#menuBtn {
+  display: none;
 }
 #registerButton {
   clear: both;
@@ -201,13 +208,10 @@ footer .contactContainer .dotnet:hover {
   padding-left: 27px;
   position: relative;
 }
-#registerButton .iconCheck {
-  background-image: url('../content/Calendarwhite.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 15px;
+#registerButton .glyphicon-calendar {
+  padding: 5px;
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: 5px;
 }
 #registerButton .registerButtonText {
@@ -321,11 +325,11 @@ footer .contactContainer .dotnet:hover {
   .navbarNavigation ul li {
     display: block;
   }
+  #menuBtn {
+    display: block;
+  }
   .site-logo {
     margin-top: 5px;
     margin-bottom: 3px;
-  }
-  .iconHamburger {
-    display: block !important;
   }
 }
