@@ -177,6 +177,9 @@ footer .contactContainer .dotnet:hover {
   margin: 0 auto;
   font-size: 18px;
 }
+#aboutInfo {
+  text-align: left;
+}
 .sectionTitle {
   text-align: center;
   font-size: 37px;
@@ -188,6 +191,8 @@ footer .contactContainer .dotnet:hover {
   float: right;
   font-size: 30px;
   color: white;
+}
+#menuBtn {
   display: none;
 }
 #registerButton {
@@ -318,6 +323,9 @@ footer .contactContainer .dotnet:hover {
     width: 100vw;
   }
   .navbarNavigation ul li {
+    display: block;
+  }
+  #menuBtn {
     display: block;
   }
   .site-logo {
