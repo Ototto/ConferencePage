@@ -14,11 +14,14 @@ body {
 // Main page
 .entry-page {
     height: 100vh;
->>>>>>> 34
     background-size: cover;
     position: relative;
     transition: 999999s;
-    background: #aa0000 url("./content/bgg.jpg") no-repeat fixed 100% auto;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-image: url("../content/bgg.jpg");
+    background-color: #aa0000;
+    background-attachment: fixed;
 }
 
 .navbarBar {
@@ -131,6 +134,10 @@ body {
     width: 100%;
     border-bottom: 1px solid black;
     padding-bottom: 20px;
+
+    img{
+        max-width: 420px;
+    }
 }
 
 .adressSection {
@@ -197,6 +204,7 @@ footer {
 
 #aboutInfo{
     text-align: left;
+    padding: 4px;
 }
 
 .sectionTitle {
@@ -354,6 +362,14 @@ footer {
             .dotnet {
                 margin: 0 auto;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .partnerSection {
+        img {
+            max-width: 280px;
         }
     }
 }

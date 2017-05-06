@@ -11,14 +11,14 @@ body {
 }
 .entry-page {
   height: 100vh;
-  background-image: url("../content/bgg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
-  background-position: 100% auto;
   position: relative;
   transition: 999999s;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-image: url("../content/bgg.jpg");
   background-color: #aa0000;
+  background-attachment: fixed;
 }
 .navbarBar {
   z-index: 1000;
@@ -119,6 +119,9 @@ body {
   border-bottom: 1px solid black;
   padding-bottom: 20px;
 }
+.partnerSection img {
+  max-width: 420px;
+}
 .adressSection {
   width: 100%;
   height: auto;
@@ -179,6 +182,7 @@ footer .contactContainer .dotnet:hover {
 }
 #aboutInfo {
   text-align: left;
+  padding: 4px;
 }
 .sectionTitle {
   text-align: center;
@@ -235,7 +239,7 @@ footer .contactContainer .dotnet:hover {
   width: 200px;
   height: 250px;
   text-align: center;
-  background-image: linear-gradient(to bottom, #fff 50%, #0203e3 50%, #d800ff);
+  background-image: linear-gradient(to bottom, #ffffff 50%, #0203e3 50%, #d800ff);
   transition: background-position 0.5s;
   background-size: 100% 200%;
   padding-top: 33px;
@@ -275,6 +279,10 @@ footer .contactContainer .dotnet:hover {
   display: inline-block;
   padding: 7px;
 }
+@keyframes navbarJump {
+}
+@keyframes animateFacebook {
+}
 @media all and (max-width: 480px) {
   .welcomeSection p {
     font-size: 28px;
@@ -310,6 +318,11 @@ footer .contactContainer .dotnet:hover {
   }
   footer .contactContainer .dotnet {
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .partnerSection img {
+    max-width: 280px;
   }
 }
 @media only screen and (max-width: 1160px) {
