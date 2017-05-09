@@ -330,6 +330,9 @@ footer .contactContainer .dotnet:hover {
   .entry-page {
     background-attachment: scroll;
   }
+  #crystalPartner {
+    font-size: 38px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .partnerSection img {
