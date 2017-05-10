@@ -27,7 +27,8 @@ body {
 #crystalPartner {
   text-align: center;
   font-size: 48px;
-  color: #00ffff;
+  color: black;
+  font-weight: 600;
 }
 .navbarBar {
   z-index: 1000;
