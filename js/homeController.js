@@ -42,6 +42,33 @@ var HomeController = new function () {
         }
     }
 
+    var smoothScroll = function () {
+        console.log(this);
+        console.log(event);
+        if (this.hash !== "") {
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                window.location.hash = hash;
+            });
+        }
+    }
+
+    var isElementOnScreen = function (element) {
+        var pageTop = $(window).scrollTop();
+        var pageBottom = pageTop + $(window).height();
+        var elementTop = $(element).offset().top;
+        var elementBottom = elementTop + $(element).height();
+
+        return (elementTop <= pageBottom);
+    }
+
     var init = new function () {
         navbarControl;
         $('#menuBtn').click(mobileNavbarControl);
@@ -52,23 +79,16 @@ var HomeController = new function () {
             $('#modalDesc').text($(e.relatedTarget).attr('data-desc'));
         });
 
-        $(".navbarNavigationList a").on('click', function (event) {
-            console.log(this);
-            console.log(event);
-            if (this.hash !== "") {
+        $(".navbarNavigationList a").on('click', smoothScroll);
 
-                event.preventDefault();
-
-                var hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-
-                    window.location.hash = hash;
-                });
-            }
-        });
+        // $(window).scroll(function() {
+        //     var className = "animated slideInUp";
+        //     if(isElementOnScreen($('section')) && !$('section').hasClass(className))
+        //     {
+        //         $('section').toggleClass(className);
+        //     }
+        // });
+        
     }
 
     return {
