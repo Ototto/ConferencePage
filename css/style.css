@@ -5,7 +5,7 @@
 }
 body {
   margin: 0;
-  background-color: aliceblue;
+  background-color: aliceblue !important;
   font-family: 'Raleway', sans-serif !important;
   padding: 0;
 }
@@ -157,6 +157,70 @@ body {
   font-size: 27px;
   padding: 45px;
 }
+/* AGENDA */
+.agendContent {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.block-a {
+  display: inline-block;
+  padding: 20px;
+}
+.lessonBox {
+  position: relative;
+  background-color: #fff;
+  width: 430px;
+  height: 170px;
+  margin-bottom: 20px;
+}
+.lessonBox .lessonTime {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 20px;
+}
+.lessonBox .lessonTitle {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: 900;
+}
+.lessonBox .lessonTitle span {
+  display: block;
+  font-weight: 400;
+  font-size: 22px;
+}
+.lessonBox:hover {
+  background-color: #4286f4;
+  transition: 0.2s;
+  color: white;
+}
+.timeBox:hover {
+  background-color: #264e8e;
+  transition: 0.1s;
+}
+.timeBox {
+  position: relative;
+  width: 430px;
+  height: 50px;
+  background-color: #2e2d2d;
+  padding: 0;
+  margin-bottom: 20px;
+  color: white;
+  padding: 16px;
+}
+.timeBox span {
+  font-size: 15px;
+}
+.agendTogether {
+  width: 100%;
+  padding: 20px;
+}
+.agendTogether .lessonBox {
+  margin: 20px auto;
+}
+/* FOOTER */
 footer {
   min-height: 430px;
   max-height: 500px;
@@ -351,6 +415,14 @@ footer .contactContainer .dotnet:hover {
 @media only screen and (max-width: 500px) {
   .partnerSection img {
     max-width: 280px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .lessonBox {
+    width: 300px;
+  }
+  .timeBox {
+    width: 300px;
   }
 }
 @media only screen and (max-width: 1160px) {
