@@ -323,7 +323,7 @@ footer .contactContainer .dotnet:hover {
   width: 200px;
   height: 250px;
   text-align: center;
-  background-image: linear-gradient(to bottom, #ffffff 50%, #0203e3 50%, #d800ff);
+  background-image: linear-gradient(to bottom, #fff 50%, #0203e3 50%, #d800ff);
   transition: background-position 0.5s;
   background-size: 100% 200%;
   padding-top: 33px;
@@ -404,13 +404,29 @@ footer .contactContainer .dotnet:hover {
   .entry-page {
     background-attachment: scroll;
   }
-  .crystalPartner {
-    font-size: 38px;
-  }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 633px) {
+  .crystalPartner {
+    font-size: 32px;
+  }
   .partnerSection img {
     max-width: 280px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .lessonBox {
+    width: 260px !important;
+  }
+  .timeBox {
+    width: 260px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .crystalPartner {
+    font-size: 25px;
+  }
+  .partnerSection img {
+    max-width: 200px;
   }
 }
 @media only screen and (max-width: 470px) {

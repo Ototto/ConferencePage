@@ -26,13 +26,13 @@
         -webkit-background-attachment: fixed;
     }
 
-    .partnerContainer{
+    .partnerContainer {
         margin: 20px 60px 20px 60px;
         border-bottom: 1px solid black;
         padding-bottom: 40px;
     }
 
-    .partnerContainer:last-child{
+    .partnerContainer:last-child {
         border: none;
     }
 
@@ -133,7 +133,6 @@
         width: 100%;
         border-bottom: 1px solid black;
         padding-bottom: 20px;
-        
     }
 
     .workshopSection {
@@ -184,7 +183,6 @@
     .block-a {
         display: inline-block;
         padding: 20px;
-        
     }
 
     .lessonBox {
@@ -204,8 +202,7 @@
             padding: 20px;
             font-size: 28px;
             font-weight: 900;
-
-            span{
+            span {
                 display: block;
                 font-weight: 400;
                 font-size: 22px;
@@ -213,13 +210,13 @@
         }
     }
 
-    .lessonBox:hover{
+    .lessonBox:hover {
         background-color: #4286f4;
         transition: 0.2s;
         color: white;
     }
 
-    .timeBox:hover{
+    .timeBox:hover {
         background-color: #264e8e;
         transition: 0.1s;
     }
@@ -233,22 +230,18 @@
         margin-bottom: 20px;
         color: white;
         padding: 16px;
-
-        span{
+        span {
             font-size: 15px;
         }
     }
 
-    .agendTogether{
+    .agendTogether {
         width: 100%;
         padding: 20px;
-
-        .lessonBox{
+        .lessonBox {
             margin: 20px auto;
         }
-    }
-
-    // Blok A Blok B
+    } // Blok A Blok B
     /* FOOTER */
 
     footer {
@@ -448,12 +441,12 @@
         .entry-page {
             background-attachment: scroll;
         }
-        .crystalPartner {
-            font-size: 38px;
-        }
     }
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 633px) {
+        .crystalPartner {
+            font-size: 32px;
+        }
         .partnerSection {
             img {
                 max-width: 280px;
@@ -461,12 +454,34 @@
         }
     }
 
-    @media only screen and (max-width: 470px) {
-        .lessonBox{
-            width: 300px;
+    @media only screen and (max-width: 370px) {
+        .lessonBox {
+            width: 260px !important;
+        }
+        .timeBox {
+            width: 260px !important;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+
+        .crystalPartner {
+            font-size: 25px;
         }
 
-        .timeBox{
+        .partnerSection {
+            img {
+                max-width: 200px;
+            }
+        }
+          
+    }
+
+    @media only screen and (max-width: 470px) {
+        .lessonBox {
+            width: 300px;
+        }
+        .timeBox {
             width: 300px;
         }
     }
