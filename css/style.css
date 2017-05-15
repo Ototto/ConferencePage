@@ -24,11 +24,20 @@ body {
   -webkit-background-color: #aa0000;
   -webkit-background-attachment: fixed;
 }
-#crystalPartner {
+.partnerContainer {
+  margin: 20px 60px 20px 60px;
+  border-bottom: 1px solid black;
+  padding-bottom: 40px;
+}
+.partnerContainer:last-child {
+  border: none;
+}
+.crystalPartner {
   text-align: center;
   font-size: 48px;
   color: black;
   font-weight: 600;
+  opacity: 0.8;
 }
 .navbarBar {
   z-index: 1000;
@@ -314,7 +323,7 @@ footer .contactContainer .dotnet:hover {
   width: 200px;
   height: 250px;
   text-align: center;
-  background-image: linear-gradient(to bottom, #fff 50%, #0203e3 50%, #d800ff);
+  background-image: linear-gradient(to bottom, #ffffff 50%, #0203e3 50%, #d800ff);
   transition: background-position 0.5s;
   background-size: 100% 200%;
   padding-top: 33px;
@@ -395,7 +404,7 @@ footer .contactContainer .dotnet:hover {
   .entry-page {
     background-attachment: scroll;
   }
-  #crystalPartner {
+  .crystalPartner {
     font-size: 38px;
   }
 }
