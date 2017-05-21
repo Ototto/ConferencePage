@@ -126,6 +126,11 @@ body {
 .workshopSection {
   border-bottom: 1px solid black;
   padding-bottom: 20px;
+  text-align: center;
+}
+.workshopContainer {
+  text-align: center;
+  display: inline-block;
 }
 .prelegentSection {
   width: 100%;
@@ -183,7 +188,7 @@ body {
 .lessonBox .lessonTitle {
   text-align: center;
   padding: 20px;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 900;
 }
 .lessonBox .lessonTitle span {
@@ -194,11 +199,15 @@ body {
 .lessonBox:hover {
   background-color: #4286f4;
   transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
   color: white;
 }
 .timeBox:hover {
   background-color: #264e8e;
   transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
 }
 .timeBox {
   position: relative;
@@ -258,6 +267,9 @@ footer .contactContainer .dotnet:hover {
   background-position-x: 76px;
   background-image: url('../content/facebookWhite.png');
 }
+.float-top {
+  vertical-align: top;
+}
 .sectionContent {
   max-width: 1000px;
   text-align: center;
@@ -312,9 +324,6 @@ footer .contactContainer .dotnet:hover {
   color: #202020;
   transition: 0.2s;
 }
-#registerButton:hover .iconCheck {
-  background-image: url('../content/Calendarblack.png');
-}
 #registerButton:hover .registerButtonText {
   border-left: 1px solid #202020;
 }
@@ -323,7 +332,7 @@ footer .contactContainer .dotnet:hover {
   width: 200px;
   height: 250px;
   text-align: center;
-  background-image: linear-gradient(to bottom, #fff 50%, #0203e3 50%, #d800ff);
+  background-image: linear-gradient(to bottom, #ffffff 50%, #0203e3 50%, #d800ff);
   transition: background-position 0.5s;
   background-size: 100% 200%;
   padding-top: 33px;
@@ -400,6 +409,47 @@ footer .contactContainer .dotnet:hover {
     margin: 0 auto;
   }
 }
+.workshop:hover {
+  background-color: #4286f4;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  color: white;
+}
+.workshop {
+  width: 220px;
+  height: 300px;
+  background-color: white;
+  margin: 10px;
+  position: relative;
+  padding: 2px;
+  display: inline-block;
+  vertical-align: top;
+}
+.workshop span {
+  font-weight: 600;
+}
+.workshop .workshopPlace {
+  font-weight: 600;
+  position: absolute;
+  bottom: 63px;
+  left: 70px;
+  font-size: 27px;
+}
+.workshop .forStudent::after {
+  content: "dla studentów";
+  color: #FF4136;
+}
+.workshop .workshopName {
+  font-size: large;
+}
+.workshop .workshopTime {
+  font-weight: 600;
+  font-size: medium;
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+}
 @media only screen and (max-width: 840px) {
   .entry-page {
     background-attachment: scroll;
@@ -432,6 +482,9 @@ footer .contactContainer .dotnet:hover {
 @media only screen and (max-width: 470px) {
   .lessonBox {
     width: 300px;
+  }
+  .lessonBox .lessonTitle {
+    font-size: 20px;
   }
   .timeBox {
     width: 300px;

@@ -69,6 +69,12 @@ var HomeController = new function () {
         return (elementTop <= pageBottom);
     }
 
+    var setEntryPageHeightOnSafari = function () {
+        if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+            $('.entry-page').height($(window).height());
+        }
+    }
+
     var init = new function () {
         navbarControl;
         $('#menuBtn').click(mobileNavbarControl);
@@ -81,14 +87,8 @@ var HomeController = new function () {
 
         $(".navbarNavigationList a").on('click', smoothScroll);
 
-        // $(window).scroll(function() {
-        //     var className = "animated slideInUp";
-        //     if(isElementOnScreen($('section')) && !$('section').hasClass(className))
-        //     {
-        //         $('section').toggleClass(className);
-        //     }
-        // });
-        
+        setEntryPageHeightOnSafari();
+
     }
 
     return {

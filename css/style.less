@@ -138,6 +138,12 @@
     .workshopSection {
         border-bottom: 1px solid black;
         padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .workshopContainer{
+        text-align: center;
+        display: inline-block;
     }
 
     .prelegentSection {
@@ -200,7 +206,7 @@
         .lessonTitle {
             text-align: center;
             padding: 20px;
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 900;
             span {
                 display: block;
@@ -213,12 +219,16 @@
     .lessonBox:hover {
         background-color: #4286f4;
         transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
         color: white;
     }
 
     .timeBox:hover {
         background-color: #264e8e;
         transition: 0.1s;
+        -webkit-transition: 0.1s;
+        -moz-transition: 0.1s;
     }
 
     .timeBox {
@@ -281,6 +291,11 @@
             }
         }
     } // Global
+
+    .float-top{
+        vertical-align: top;
+    }
+
     .sectionContent {
         max-width: 1000px;
         text-align: center;
@@ -340,9 +355,7 @@
         background-color: white;
         color: #202020;
         transition: 0.2s;
-        .iconCheck {
-            background-image: url('../content/Calendarblack.png');
-        }
+
         .registerButtonText {
             border-left: 1px solid #202020;
         }
@@ -393,7 +406,11 @@
             display: inline-block;
             padding: 7px;
         }
-    } // Media queries
+    }
+
+
+
+    // Media queries
     @media all and (max-width: 480px) {
         .welcomeSection p {
             font-size: 28px;
@@ -434,6 +451,54 @@
                     margin: 0 auto;
                 }
             }
+        }
+    }
+
+    .workshop:hover {
+        background-color: #4286f4;
+        transition: 0.1s;
+        -webkit-transition: 0.1s;
+        -moz-transition: 0.1s;
+        color: white;
+    }
+
+    .workshop{
+        width: 220px;
+        height: 300px;
+        background-color: white;
+        margin: 10px;
+        position: relative;
+        padding: 2px;
+        display: inline-block;
+        vertical-align: top;
+
+        span{
+            font-weight: 600;
+        }
+
+        .workshopPlace{
+            font-weight: 600;
+            position: absolute;
+            bottom: 63px;
+            left: 70px;
+            font-size: 27px;
+        }
+
+        .forStudent::after{
+            content: "dla studentów";
+            color: #FF4136;
+        }
+
+        .workshopName{
+            font-size: large;
+        }
+
+        .workshopTime{
+            font-weight: 600;
+            font-size: medium;
+            position: absolute;
+            bottom: 10px;
+            right: 5%;
         }
     }
 
@@ -480,10 +545,16 @@
     @media only screen and (max-width: 470px) {
         .lessonBox {
             width: 300px;
+
+            .lessonTitle{
+                font-size: 20px;
+            }
         }
         .timeBox {
             width: 300px;
         }
+
+
     }
 
     @media only screen and (max-width: 1160px) {

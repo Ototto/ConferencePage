@@ -17,277 +17,446 @@
     <link rel="manifest" href="content/favicon/manifest.json">
     <link rel="mask-icon" href="content/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#aa0000">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="navbarBar">
-        <div class="site-logo">
-            <a href="https://www.facebook.com/GrupaNETPg/?fref=ts"><img src="./content/net-logo.png" width="40" height="40" alt="Grupa .NET PG"></a>
-        </div>
-        <div id="menuBtn" class="glyphicon glyphicon-menu-hamburger"></div>
-        <nav class="navbarNavigation">
-            <ul class="navbarNavigationList">
-                <a href="#mainPage">
-                    <li class="navigationLink" id="mainPageButton">home</li>
-                </a>
-                <a href="#description">
-                    <li class="navigationLink">o konferencji</li>
-                </a>
-                <a href="#register">
-                    <li class="navigationLink">rejestracja</li>
-                </a>
-                <a href="#agenda">
-                    <li class="navigationLink">agenda</li>
-                </a>
-                <a href="#workshop">
-                    <li class="navigationLink">warsztaty</li>
-                </a>
-                <a href="#prelegent">
-                    <li class="navigationLink">prelegenci</li>
-                </a>
-                <a href="#partner">
-                    <li class="navigationLink">partnerzy</li>
-                </a>
-                <a href="#adress">
-                    <li class="navigationLink">kontakt</li>
-                </a>
-            </ul>
-        </nav>
+<div class="navbarBar">
+    <div class="site-logo">
+        <a href="https://www.facebook.com/GrupaNETPg/?fref=ts"><img src="./content/net-logo.png" width="40" height="40"
+                                                                    alt="Grupa .NET PG"></a>
     </div>
-    <div class="entry-page" id="mainPage">
-        <div id="header" class="slideInDown">
-            <div class="title">zakręć się z technologią</div>
-            <div class="description">unikalna konferencja w TRÓJMIEŚCIE</div>
-            <a href="https://www.meetup.com/Studenckie-Grupy-NET/events/239484340/">
-                <div class="cta-button">REJESTRACJA</div>
+    <div id="menuBtn" class="glyphicon glyphicon-menu-hamburger"></div>
+    <nav class="navbarNavigation">
+        <ul class="navbarNavigationList">
+            <a href="#mainPage">
+                <li class="navigationLink" id="mainPageButton">home</li>
+            </a>
+            <a href="#description">
+                <li class="navigationLink">o konferencji</li>
+            </a>
+            <a href="#register">
+                <li class="navigationLink">rejestracja</li>
+            </a>
+            <a href="#agenda">
+                <li class="navigationLink">agenda</li>
+            </a>
+            <a href="#workshop">
+                <li class="navigationLink">warsztaty</li>
+            </a>
+            <a href="#prelegent">
+                <li class="navigationLink">prelegenci</li>
+            </a>
+            <a href="#partner">
+                <li class="navigationLink">partnerzy</li>
+            </a>
+            <a href="#adress">
+                <li class="navigationLink">kontakt</li>
+            </a>
+        </ul>
+    </nav>
+</div>
+<div class="entry-page" id="mainPage">
+    <div id="header" class="slideInDown">
+        <div class="title">zakręć się z technologią</div>
+        <div class="description">unikalna konferencja w TRÓJMIEŚCIE</div>
+        <a href="https://www.meetup.com/Studenckie-Grupy-NET/events/239484340/">
+            <div class="cta-button">REJESTRACJA</div>
+        </a>
+    </div>
+</div>
+<main>
+    <section class="descriptionSection" id="description">
+        <div class="sectionTitle">
+            O KONFERENCJI
+        </div>
+        <p class="sectionContent" id="aboutInfo">
+            Już 26 maja na Wydziale Elektroniki, Telekomunikacji i Informatyki odbędzie się konferencja organizowana w
+            ramach 65-lecia
+            naszego wydziału. Jest ona przeznaczona zarówno dla absolwentów, studentów, jak i dla uczniów szkół
+            średnich.
+            <br><br> Będzie ona podzielona na dwa osobne strumienie:
+            <br><br> Na jednej sali audytoryjnej będą prelekcje przeznaczone głównie dla osób, które chciałyby w
+            przyszłości
+            uczyć się na naszym wydziale, bądź pragną rozpocząć swoją przygodę z technologią, ale nie wiedza od czego
+            zacząć.
+            <br><br> Z kolei na drugiej sali prowadzone będą prelekcje dla osób, które już od jakiegoś czasu się
+            interesują
+            nowinkami technoloicznymi. Tematami prelekcji będą między innymi: Xamarin, Machine Learning, Data Science
+            oraz wiele innych.
+            <br><br> Podczas wydarzenia będzie wiele nagród do zdobycia, a także będą prowadzone dodatkowe warsztaty,
+            dla mniejszych grup.
+        </p>
+    </section>
+    <section class="registerSection" id="register">
+        <div class="sectionTitle">
+            ZAREJESTRUJ SIĘ JUŻ TERAZ!
+            <br>
+            <a href="https://www.meetup.com/Studenckie-Grupy-NET/events/239484340/" id="registerButton">
+                <span class="iconCheck glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                <span class="registerButtonText">Rejestracja</span>
             </a>
         </div>
-    </div>
-    <main>
-        <section class="descriptionSection" id="description">
-            <div class="sectionTitle">
-                O KONFERENCJI
+    </section>
+    <section class="agendaSection" id="agenda">
+        <div class="sectionTitle">
+            AGENDA
+        </div>
+
+        <div class="agendContent">
+
+            <div class="agendTogether">
+                <div class="lessonBox">
+                    <div class="lessonTitle">Rejestracja</div>
+                    <div class="lessonTime">08:00 - 09:00</div>
+                </div>
+                <div class="lessonBox">
+                    <div class="lessonTitle">Otwarcie</div>
+                    <div class="lessonTime">09:00 - 09:15</div>
+                </div>
             </div>
-            <p class="sectionContent" id="aboutInfo">
-                Już 26 maja na Wydziale Elektroniki, Telekomunikacji i Informatyki odbędzie się konferencja organizowana w ramach 65-lecia
-                naszego wydziału. Jest ona przeznaczona zarówno dla absolwentów, studentów, jak i dla uczniów szkół średnich.
-                <br><br> Będzie ona podzielona na dwa osobne strumienie:
-                <br><br> Na jednej sali audytoryjnej będą prelekcje przeznaczone głównie dla osób, które chciałyby w przyszłości
-                uczyć się na naszym wydziale, bądź pragną rozpocząć swoją przygodę z technologią, ale nie wiedza od czego
-                zacząć.
-                <br><br> Z kolei na drugiej sali prowadzone będą prelekcje dla osób, które już od jakiegoś czasu się interesują
-                nowinkami technoloicznymi. Tematami prelekcji będą między innymi: Xamarin, Machine Learning, Data Science
-                oraz wiele innych.
-                <br><br> Podczas wydarzenia będzie wiele nagród do zdobycia, a także będą prowadzone dodatkowe warsztaty,
-                dla mniejszych grup.
-            </p>
-        </section>
-        <section class="registerSection" id="register">
-            <div class="sectionTitle">
-                ZAREJESTRUJ SIĘ JUŻ TERAZ!
-                <br>
-                <a href="https://www.meetup.com/Studenckie-Grupy-NET/events/239484340/" id="registerButton">
-                    <span class="iconCheck glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                    <span class="registerButtonText">Rejestracja</span>
+
+            <div class="block-a">
+                <h2>Blok A</h2>
+                <h4>Dla szkół średnich</h4>
+                <div class="lessonBox">
+                    <div class="lessonTitle">
+                        Wizytacja stoisk kierunków kształcenia oraz studenckich kół naukowych
+                        <span></span>
+                    </div>
+                    <div class="lessonTime">10:00 - 11:00</div>
+                </div>
+                <div class="timeBox">
+
+                </div>
+
+                <div class="lessonBox">
+                    <div class="lessonTitle">
+                        Kariera na ETI – prezentacja Samorządu Studenckiego WETI
+                        <span></span>
+                    </div>
+                    <div class="lessonTime">11:00 - 12:00</div>
+                </div>
+                <div class="timeBox">
+
+                </div>
+
+                <div class="lessonBox">
+                    <div class="lessonTitle">
+                        Prezentacja dorobku studenckich kół naukowych
+                        <span></span>
+                    </div>
+                    <div class="lessonTime">12:00 - 13:00</div>
+                </div>
+            </div>
+
+            <div class="block-a float-top">
+                <h2>Blok B</h2>
+                <h4>Dla studentów</h4>
+                <div class="lessonBox">
+                    <div class="lessonTitle">
+                        Kontenery IoC w praktyce
+                        <span></span>
+                    </div>
+                    <div class="lessonTime">09:15 - 10:45</div>
+                </div>
+                <div class="timeBox">
+                    Przerwa: <span>10:45 - 10:50</span>
+                </div>
+
+                <div class="lessonBox">
+                    <div class="lessonTitle">
+                        Startupy
+                        <span></span>
+                    </div>
+                    <div class="lessonTime">10:50 - 11:20</div>
+                </div>
+                <div class="timeBox">
+                    Długa przerwa: <span>11:20 - 11:50</span>
+                </div>
+
+                <div class="lessonBox">
+                    <div class="lessonTitle">
+                        Czy jesteś bezpieczny w sieci, czyli historia hackingu w przykładach
+                        <span></span>
+                    </div>
+                    <div class="lessonTime">12:00 - 12:50</div>
+                </div>
+                <div class="timeBox">
+                    Przerwa: <span>12:50 - 13:00</span>
+                </div>
+
+                <div class="lessonBox">
+                    <div class="lessonTitle">
+                        Xamarin
+                        <span></span>
+                    </div>
+                    <div class="lessonTime">13:00 - 14:00</div>
+                </div>
+                <div class="timeBox">
+                    Przerwa: <span>14:00 - 14:15</span>
+                </div>
+
+                <div class="lessonBox">
+                    <div class="lessonTitle">
+                        SharePoint
+                        <span></span>
+                    </div>
+                    <div class="lessonTime">14:15 - 15:00</div>
+                </div>
+                <div class="timeBox">
+                    Przerwa: <span>15:00 - 15:15</span>
+                </div>
+                <div class="lessonBox">
+                    <div class="lessonTitle">
+                        Przedstawienie wyników badań dot. czujników optycznych
+                        <span></span>
+                    </div>
+                    <div class="lessonTime">15:15 - 15:30</div>
+                </div>
+            </div>
+
+            <div class="agendTogether">
+                <div class="lessonBox">
+                    <div class="lessonTitle">
+                        Zakończenie
+                        <span></span>
+                    </div>
+                    <div class="lessonTime">15:40 - 16:00</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="workshopSection" id="workshop">
+        <div class="sectionTitle">
+            WARSZTATY
+        </div>
+        <div class="workshopContainer">
+            <div class="workshop">
+                <div class="workshopName">
+                    <span>Design Thinking</span>, czyli jak tworzyć innowacyjne produkty.
+                    <br><span>KN Zarządzanie IT</span>
+                </div>
+                <div class="workshopPlace">
+                    NE205
+                </div>
+                <div class="workshopTime">
+                    13:00 - 14:30
+                </div>
+            </div>
+            <div class="workshop">
+                <div class="workshopName">
+                    <span>Linux</span>, czyli ciekawa alternatywa dla systemu Windows
+                    <br><span>KN Grupa .NET</span>
+                </div>
+                <div class="workshopPlace">
+                    NE230
+                </div>
+                <div class="workshopTime">
+                    11:00 - 12:00<br>
+                    12:00 - 13:00
+                </div>
+            </div>
+            <div class="workshop">
+                <div class="workshopName">
+                    Moja pierwsza aplikacja, czyli <span>podstawy języka C#</span>, który jest obecnie jednym z popularniejszych języków na rynku pracy
+                    <br><span>KN Grupa .NET</span>
+                </div>
+                <div class="workshopPlace">
+                    NE208
+                </div>
+                <div class="workshopTime">
+                    13:00 - 14:00
+                </div>
+            </div>
+            <div class="workshop">
+                <div class="workshopName">
+                    <span>Unity</span>, czyli jak tworzyć gry komputerowe od podstaw
+                    <br><span>KN Grupa .NET</span>
+                </div>
+                <div class="workshopPlace">
+                    NE207
+                </div>
+                <div class="workshopTime">
+                    11:00 - 12:00<br>
+                    12:00 - 13:00
+                </div>
+            </div>
+            <div class="workshop">
+                <div class="workshopName">
+                    <span>JavaScript</span>, czyli strony WWW od podszewki
+                    <br><span>KN Grupa .NET</span>
+                </div>
+                <div class="workshopPlace">
+                    NE232
+                </div>
+                <div class="workshopTime">
+                    12:00 - 13:00<br>
+                    13:00 - 14:00
+                </div>
+            </div>
+            <div class="workshop">
+                <div class="workshopName">
+                    <span>WPF</span>, czyli jak porzucić programowanie w konsoli w języku C#
+                    <br><span>KN Grupa .NET</span>
+                    <br><span class="forStudent"></span>
+                </div>
+                <div class="workshopPlace">
+                    EA504
+                </div>
+                <div class="workshopTime">
+                    13:00 - 14:00
+                </div>
+            </div>
+            <div class="workshop">
+                <div class="workshopName">
+                    <span>ASP.NET</span>, czyli rzecz o zaawansowanym tworzeniu stron internetowych
+                    <br><span>KN Grupa .NET</span>
+                    <br><span class="forStudent"></span>
+                </div>
+                <div class="workshopPlace">
+                    EA504
+                </div>
+                <div class="workshopTime">
+                    12:00 - 13:00
+                </div>
+            </div>
+            <div class="workshop">
+                <div class="workshopName">
+                    <span>Internet of Things</span>, czyli czy?, jak? i po co? twoja lodówka, odkurzacz czy mieszkanie mogą korzystać z Internetu
+                    <br><span>Warsztaty KN PCB</span>
+                </div>
+                <div class="workshopPlace">
+                    NE235
+                </div>
+                <div class="workshopTime">
+                    12:00 - 14:00
+                </div>
+            </div>
+            <div class="workshop">
+                <div class="workshopName">
+                    <span>DataScience</span> – praca z AzureML
+                    <br><span class="forStudent"></span>
+                </div>
+                <div class="workshopPlace">
+                    EA508
+                </div>
+                <div class="workshopTime">
+                    13:00 - 15:00
+                </div>
+            </div>
+            <div class="workshop">
+                <div class="workshopName">
+                    <span>Machine Learning</span> -  AI w Facebooku, Reinforcement Learning w DeepMind oraz Cele i powody rozwoju uczenia maszynowego
+                    <br><span>Warsztaty KN GRADIENT</span>
+                </div>
+                <div class="workshopPlace">
+                    EA234
+                </div>
+                <div class="workshopTime">
+                    13:00 - 15:00
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prelegentSection" id="prelegent">
+        <div class="sectionTitle">
+            PRELEGENCI
+        </div>
+        <div class="sectionContent">Już wkrótce</div>
+
+    </section>
+    <section class="partnerSection" id="partner">
+        <div class="sectionTitle">
+            PARTNERZY
+        </div>
+        <div class="sectionContent">
+            <div class="partnerContainer">
+                <p class="crystalPartner">KRYSZTAŁOWI</p>
+                <img class="partnerImg" src="./content/nordealogo.gif" alt="Nordea">
+                <img class="partnerImg" src="./content/atena.png" alt="Atena">
+            </div>
+            <div class="partnerContainer">
+                <p class="crystalPartner">ZŁOCI</p>
+                <img src="./content/okesoftware.png" alt="OKE software">
+            </div>
+            <div class="crystalPartner">
+                <img src="./content/pathotgda.png" alt="Patronat honorowy Miasta Gdańsk">
+            </div>
+
+        </div>
+    </section>
+    <section class="adressSection" id="adress">
+        <div class="sectionTitle">
+            ADRES
+        </div>
+        <div id="googleMap"></div>
+        <div class="adress">
+            Politechnika Gdańska<br> G.Narutowicza 11/12<br> Gdańsk
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="sectionTitle">Kontakt</div>
+    <div class="contactContainer">
+        <div class="facebooks">
+            <div class="contactSection">
+                <div class="dotnetTitle">Grupa .NET PG</div>
+                <a href="https://www.facebook.com/GrupaNETPg/?fref=ts">
+                    <div class="dotnet"></div>
                 </a>
             </div>
-        </section>
-        <section class="agendaSection" id="agenda">
-            <div class="sectionTitle">
-                AGENDA
-            </div>
-            <!--<p class="sectionContent">
-                Już wkrótce
-            </p>-->
-            <div class="agendContent">
-
-                <div class="agendTogether">
-                    <div class="lessonBox">
-                        <div class="lessonTitle">Rejestracja</div>
-                        <div class="lessonTime">08:00 - 09:00</div>
-                    </div>
-                    <div class="lessonBox">
-                        <div class="lessonTitle">Otwarcie</div>
-                        <div class="lessonTime">09:00 - 09:15</div>
-                    </div>
-                </div>
-
-
-                <div class="block-a">
-                    <div class="lessonBox">
-                        <div class="lessonTitle">
-                            Kontenery IoC w praktyce
-                            <span></span>
-                        </div>
-                        <div class="lessonTime">09:15 - 10:45</div>
-                    </div>
-                    <div class="timeBox">
-                        Przerwa: <span>10:45 - 11:00</span>
-                    </div>
-
-                    <div class="lessonBox">
-                        <div class="lessonTitle">
-                            Xamarin
-                            <span></span>
-                        </div>
-                        <div class="lessonTime">11:00 - 12:00</div>
-                    </div>
-                    <div class="timeBox">
-                        Długa przerwa: <span>12:00 - 13:00</span>
-                    </div>
-
-                    <div class="lessonBox">
-                        <div class="lessonTitle">
-                            SharePoint
-                            <span></span>
-                        </div>
-                        <div class="lessonTime">13:00 - 14:00</div>
-                    </div>
-                    <div class="timeBox">
-                        Przerwa: <span>14:00 - 14:15</span>
-                    </div>
-
-                    <div class="lessonBox">
-                        <div class="lessonTitle">
-                            DataScience
-                            <span></span>
-                        </div>
-                        <div class="lessonTime">14:15 - 15:00</div>
-                    </div>
-                    <div class="timeBox">
-                        Przerwa: <span>15:00 - 15:15</span>
-                    </div>
-
-                    <div class="lessonBox">
-                        <div class="lessonTitle">
-                            Firma Atena
-                            <span></span>
-                        </div>
-                        <div class="lessonTime">15:15 - 16:00</div>
-                    </div>
-                    <div class="timeBox">
-                        Przerwa: <span>16:00 - 16:10</span>
-                    </div>
-
-                </div>
-
-                <div class="agendTogether">
-                    <div class="lessonBox">
-                        <div class="lessonTitle">
-                            Zakończenie
-                            <span></span>
-                        </div>
-                        <div class="lessonTime">16:10 - 16:40</div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="workshopSection" id="workshop">
-            <div class="sectionTitle">
-                WARSZTATY
-            </div>
-            <p class="sectionContent">
-                Już wkrótce
-            </p>
-        </section>
-        <section class="prelegentSection" id="prelegent">
-            <div class="sectionTitle">
-                PRELEGENCI
-            </div>
-            <div class="sectionContent">Już wkrótce</div>
-            
-        </section>
-        <section class="partnerSection" id="partner">
-            <div class="sectionTitle">
-                PARTNERZY
-            </div>
-            <div class="sectionContent">
-                <div class="partnerContainer">
-                    <p class="crystalPartner">KRYSZTAŁOWI</p>
-                    <img class="partnerImg" src="./content/nordealogo.gif" alt="Nordea"> 
-                    <img class="partnerImg" src="./content/atena.png" alt="Atena"> 
-                </div>
-                <div class="partnerContainer">
-                    <p class="crystalPartner">ZŁOCI</p>
-                    <img src="./content/okesoftware.png" alt="OKE software">
-                </div>
-                <div class="crystalPartner">
-                    <img src="./content/pathotgda.png" alt="Patronat honorowy Miasta Gdańsk">
-                </div>
-
-            </div>
-        </section>
-        <section class="adressSection" id="adress">
-            <div class="sectionTitle">
-                ADRES
-            </div>
-            <div id="googleMap"></div>
-            <div class="adress">
-                Politechnika Gdańska<br> G.Narutowicza 11/12<br> Gdańsk
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="sectionTitle">Kontakt</div>
-        <div class="contactContainer">
-            <div class="facebooks">
-                <div class="contactSection">
-                    <div class="dotnetTitle">Grupa .NET PG</div>
-                    <a href="https://www.facebook.com/GrupaNETPg/?fref=ts">
-                        <div class="dotnet"></div>
-                    </a>
-                </div>
-                <div class="contactSection">
-                    <div class="dotnetTitle">Grupa Junior .NET PG</div>
-                    <a href="https://www.facebook.com/junior.NET.PG/?fref=ts">
-                        <div class="dotnet"></div>
-                    </a>
-                </div>
-            </div>
             <div class="contactSection">
-                <div class="dotnetTitle">E-MAIL</div>
-                <div class="contactEmail">mborowicz@juniornet.ms</div>
+                <div class="dotnetTitle">Grupa Junior .NET PG</div>
+                <a href="https://www.facebook.com/junior.NET.PG/?fref=ts">
+                    <div class="dotnet"></div>
+                </a>
             </div>
         </div>
-    </footer>
+        <div class="contactSection">
+            <div class="dotnetTitle">E-MAIL</div>
+            <div class="contactEmail">mborowicz@juniornet.ms</div>
+        </div>
+    </div>
+</footer>
 
-    <div class="modal fade prelegentModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modalContent">
-                <img class="img-responsive" src="" alt="prelegent">
-                <div class="modalText">
-                    <h2 id="modalName"></h2>
-                    <div id="modalDesc">
-                    </div>
+<div class="modal fade prelegentModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modalContent">
+            <img class="img-responsive" src="" alt="prelegent">
+            <div class="modalText">
+                <h2 id="modalName"></h2>
+                <div id="modalDesc">
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <script src="./js/homeController.js">
-        HomeController.init;
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHtd7iHb0nZeRjIBCF2J9U_HI3ja--qDo&callback=initMap">
+<script src="./js/homeController.js">
+    HomeController.init;
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHtd7iHb0nZeRjIBCF2J9U_HI3ja--qDo&callback=initMap">
 
-    </script>
-    <script>
-        var initMap = new function () {
-            var pg = { lat: 54.371640, lng: 18.612628 };
-            var map = new google.maps.Map(document.getElementById('googleMap'), {
-                zoom: 18,
-                center: pg,
-                backgroundColor: "gray",
-                scrollwheel: false,
-            });
-            var marker = new google.maps.Marker({
-                position: pg,
-                map: map
-            });
-        }
-    </script>
+</script>
+<script>
+    var initMap = new function () {
+        var pg = {lat: 54.371640, lng: 18.612628};
+        var map = new google.maps.Map(document.getElementById('googleMap'), {
+            zoom: 18,
+            center: pg,
+            backgroundColor: "gray",
+            scrollwheel: false,
+        });
+        var marker = new google.maps.Marker({
+            position: pg,
+            map: map
+        });
+    }
+</script>
 </body>
 
 </html>
