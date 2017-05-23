@@ -38,6 +38,7 @@ body {
   color: black;
   font-weight: 600;
   opacity: 0.8;
+  padding-bottom: 35px;
 }
 .navbarBar {
   z-index: 1000;
